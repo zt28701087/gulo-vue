@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/zt28701087/gulo-vue/issues"
   },
-  "homepage": "https://github.com/zt28701087/gulo-vue#readme"
+  "homepage": "https://github.com/zt28701087/gulo-vue#readme",
+  "dependencies": {
+    "vue": "^2.5.17"
+  }
 }
