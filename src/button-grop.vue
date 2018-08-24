@@ -22,7 +22,9 @@
         vertical-align: middle;
         > .g-button{
             border-radius: 0;
-            margin-left: -2px;
+            &:not(:first-child){
+                margin-left: -2px;
+            }
             &:first-child{
                 border-top-left-radius: var(--button-radius);
                 border-bottom-left-radius: var(--button-radius);
