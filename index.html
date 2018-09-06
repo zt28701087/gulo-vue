@@ -23,22 +23,34 @@
         }
     </style>
     <style>
-
+        .box{
+            margin: 20px;
+        }
     </style>
 </head>
 <body>
 <div id="app">
-    <g-button :loading="loading1" @click="loading1 = !loading1">设置</g-button>
-    <g-button icon="settings" :loading="loading2" icon-position="left" @click="loading2 = !loading2">设置</g-button>
-    <g-button icon="settings" icon-position="right" :loading="loading3" @click="loading3 = !loading3">设置</g-button>
-    <g-button-group>
-        <g-button icon="left">设置</g-button>
-        <g-button>设置</g-button>
-        <g-button icon="right" icon-position="right">设置</g-button>
-    </g-button-group>
-    <div id="text"></div>
+    <div class="box" style="margin-bottom: 20px;">
+        <g-button :loading="loading1" @click="loading1 = !loading1">设置</g-button>
+        <g-button icon="settings" :loading="loading2" icon-position="left" @click="loading2 = !loading2">设置</g-button>
+        <g-button icon="settings" icon-position="right" :loading="loading3" @click="loading3 = !loading3">设置</g-button>
+        <g-button-group>
+            <g-button icon="left">设置</g-button>
+            <g-button>设置</g-button>
+            <g-button icon="right" icon-position="right">设置</g-button>
+        </g-button-group>
+    </div>
+    <div class="box">
+        <g-input value="张三" disabled></g-input>
+        <g-input value="李四" readonly></g-input>
+        <g-input value="王五" ></g-input>
+    </div>
+    <div class="box">
+        <g-input value="赵六" error="姓名不能少于2个字"></g-input>
+    </div>
+
 </div>
 </body>
 </html>
 <script src="./src/app.js"></script>
-<script src="//at.alicdn.com/t/font_798108_k8h04e4pybq.js"></script>
+<script src="//at.alicdn.com/t/font_798108_25umxnxq99z.js"></script>
