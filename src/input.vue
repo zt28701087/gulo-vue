@@ -1,9 +1,14 @@
 <template>
     <div class="wrapper" :class="{error}">
-        <input type="text" :value="value" :disabled="disabled" :readonly="readonly">
+        <input type="text" :value="value" :disabled="disabled" :readonly="readonly"
+               @change = "$emit('change', $event)"
+               @input = "$emit('input', $event)"
+               @focus = "$emit('focus', $event)"
+               @blur = "$emit('blur', $event)"
+        >
         <template v-if="error">
             <icon name="error" class="icon-error"></icon>
-            <span class="error-massage">{{error}}</span>
+            <span class="errorMassage">{{error}}</span>
         </template>
     </div>
 </template>
@@ -37,7 +42,7 @@ $height: 32px;  $border-color: #999;  $border-color-hover: #666;  $border-radius
     > :not(:last-child){margin-right: .5em;}
     &.error{ >input{border-color: $red;} }
     .icon-error{fill: $red;}
-    .error-massage{color: $red;}
+    .errorMassage{color: $red;}
     >input{
         height: $height;border: 1px solid $border-color;border-radius: $border-radius;padding: 0 8px;font-size: inherit;outline: none;
         &:hover{border-color: $border-color-hover;}
