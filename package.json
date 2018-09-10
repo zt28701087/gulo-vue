@@ -1,6 +1,6 @@
 {
   "name": "mq-vue",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "\u001bz这是个Vue-Ui 框架",
   "main": "dist/index.js",
   "scripts": {
